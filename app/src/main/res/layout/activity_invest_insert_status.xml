@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrns.invest.view.activity.InvestInsertStatus"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_card_header"
+        android:background="@drawable/nav_bg_green"
+        android:elevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+            <LinearLayout
+                android:id="@+id/layout_back_home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/nav_btn_back_n"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textview_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invest_insert_title"
+                        android:textColor="@color/textWhite"
+                        android:textSize="@dimen/invert_text_title_s_size"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/textview_sub_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty"
+                        android:textColor="@color/textWhite"
+                        android:textSize="@dimen/invert_text_title_ss_size"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/include_invest_insert_process" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_mtr_part"
+                    android:layout_width="match_parent"
+                    android:layout_height="152dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="18pt"
+                        android:layout_marginLeft="@dimen/activity_ll_margin"
+                        android:layout_marginTop="@dimen/activity_s_margin"
+                        android:layout_marginRight="@dimen/activity_ll_margin"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="@string/invest_input_inq_mtr"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_header_size" />
+
+                    <Spinner
+                        android:id="@+id/spinner_mtr_sttus"
+                        android:layout_width="match_parent"
+                        android:layout_height="25pt"
+                        android:layout_marginLeft="@dimen/activity_ll_margin"
+                        android:layout_marginTop="@dimen/activity_s_margin"
+                        android:layout_marginRight="@dimen/activity_ll_margin"
+                        android:layout_weight="1"
+                        android:background="@drawable/spinner" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="18pt"
+                        android:layout_marginLeft="@dimen/activity_ll_margin"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="@dimen/activity_ll_margin"
+                        android:layout_marginBottom="10dp"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:text="@string/invest_input_nav_step1"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_header_size" />
+                </LinearLayout>
+
+                <com.mrns.invest.util.ToggleButtonGroupTableLayout
+                    android:id="@+id/radGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radiobtn0"
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            android:layout_weight="1"
+                            android:background="@drawable/rbtn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/empty"
+                            android:textColor="@drawable/rbtn_textcolor_selector"
+                            android:textSize="38dp" />
+
+                        <RadioButton
+                            android:id="@+id/radiobtn1"
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            android:layout_weight="1"
+                            android:background="@drawable/rbtn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/empty"
+                            android:textColor="@drawable/rbtn_textcolor_selector"
+                            android:textSize="38dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/radiobtn2"
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            android:layout_weight="1"
+                            android:background="@drawable/rbtn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/empty"
+                            android:textColor="@drawable/rbtn_textcolor_selector"
+                            android:textSize="38dp" />
+
+                        <RadioButton
+                            android:id="@+id/radiobtn3"
+                            android:layout_width="match_parent"
+                            android:layout_height="180px"
+                            android:layout_weight="1"
+                            android:background="@drawable/rbtn_selector"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:text="@string/empty"
+                            android:textColor="@drawable/rbtn_textcolor_selector"
+                            android:textSize="38dp" />
+                    </TableRow>
+                </com.mrns.invest.util.ToggleButtonGroupTableLayout>
+
+
+                <EditText
+                    android:id="@+id/editbox_etc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/activity_s_margin"
+                    android:layout_marginLeft="@dimen/activity_ll_margin"
+                    android:layout_marginRight="@dimen/activity_ll_margin"
+                    android:layout_marginTop="@dimen/activity_s_margin"
+                    android:background="@drawable/edittext_n"
+                    android:imeOptions="actionDone"
+                    android:maxLines="1"
+                    android:visibility="gone"
+                    android:hint="@string/hint_etc_input"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+        <ImageView
+            android:id="@+id/btnNavBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_prev_n"
+            android:background="@drawable/btn_bg_n"/>
+        <Button
+            android:id="@+id/btn_complete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="@string/insert_complete"
+            android:textColor="@color/textWhite"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:background="@drawable/btn_bg_n"/>
+        <ImageView
+            android:id="@+id/btnNavNext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_next_n"
+            android:background="@drawable/btn_bg_n"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

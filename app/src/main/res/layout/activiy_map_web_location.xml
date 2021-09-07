@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="6">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:background="@color/qnaDetailQ">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/point_title_map_web_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|left"
+                android:textColor="@color/colorTitleBg"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:gravity="left"
+                android:layout_weight="2"
+                />
+
+            <ImageView
+                android:id="@+id/imageview_find_route"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="10dp"
+                android:layout_weight="5"
+                android:src="@drawable/btn_map_01_n" />
+
+            <ImageView
+                android:id="@+id/btn_nav_location_back"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="10dp"
+                android:layout_weight="5"
+                android:src="@drawable/tabbar_menu02_n" />
+
+            <ImageView
+                android:id="@+id/btn_close"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="5"
+                android:layout_gravity="center_vertical|right"
+                android:src="@drawable/nav_btn_close_n"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="15dp">
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/point_txt_addr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:textColor="@color/colorTitleBg"
+                    android:textSize="17dp"
+                    android:gravity="left"
+                    />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp">
+
+                <Button
+                    android:id="@+id/btn_point_insert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="조사입력"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/qnaNameText"
+                    android:background="@drawable/btn_map_view_n"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="15dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/point_install_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorTitleBg"
+                    android:textSize="17dp"
+                    android:gravity="center"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp">
+
+                <Button
+                    android:id="@+id/btn_point_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="상세보기"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/boardDetail"
+                    android:background="@drawable/btn_map_view_n"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/point_status_map_web_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorTitleBg"
+                android:textSize="17dp"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

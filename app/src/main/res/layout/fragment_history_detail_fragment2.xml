@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/detail_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.mrns.invest.view.activity.InvestDetailActivity"
+        android:layout_below="@+id/detail_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/detail_1"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="측량방법"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scSurveyMethod"
+                    android:layout_width="105dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="12dp"
+                    android:text="계산방법"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scCalcMethod"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_two"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_1"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="도선명"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scDosunName"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_three"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_two"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="사용\n기준점"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scUseDatum"
+                    android:layout_width="105dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="12dp"
+                    android:text="출발\n시준점"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scStartDatum"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_four"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_three"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="도착시준점"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scDestPoint"
+                    android:layout_width="105dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text=""
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="12dp"
+                    android:text="도착\n기계점"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scDestMechanical"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_three"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="시준점 전"
+                    android:textColor="@color/uploadDetail"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/scBeforepoint"
+                    android:layout_width="105dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edittext_n"
+                    android:gravity="center"
+                    android:textColor="@color/uploadDetailValue"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="12dp"
+                    android:text="시전점 후"
+                    android:textColor="@color/uploadDetail"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/scAfterPoint"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/edittext_n"
+                    android:gravity="center"
+                    android:textColor="@color/uploadDetailValue"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_five"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_four"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="방위각"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"
+                    android:id="@+id/scAzimuth"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_six"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_five"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="거리"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"
+                    android:id="@+id/scDistance"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>

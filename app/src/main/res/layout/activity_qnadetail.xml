@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrns.board.QnadetailActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/qnadetail_header"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@drawable/nav_bg_mint" >
+
+        <ImageButton
+            android:id="@+id/btn_nav_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/nav_btn_back_n" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="Q n A 상세정보"
+            android:textColor="@color/textWhite"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/q_header"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/qnadetail_header">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="22dp"
+            android:layout_marginBottom="45dp"
+            android:layout_gravity="center_vertical|center"
+            android:src="@drawable/ic_qna_q"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/qna_date"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical|left"
+                android:textSize="15dp"
+                android:textColor="@color/boardDate"/>
+
+            <TextView
+                android:id="@+id/qnadetail_q_title"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginRight="10dp"
+                android:gravity="top|left"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textSize="16dp"
+                android:textColor="@color/boardDetail"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="7dp"
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="17dp"
+                    android:gravity="center|left"
+                    android:text="답변"
+                    android:textColor="@color/boardDetailNum"
+                    android:textStyle="bold"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/qna_detail_count"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:gravity="center|center"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/boardDetailNum"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:gravity="center|center"
+                    android:src="@drawable/ic_main_notice_line"/>
+
+                <TextView
+                    android:id="@+id/qna_name"
+                    android:layout_width="100dp"
+                    android:layout_height="20dp"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/board"
+                    android:textSize="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/qnadetail_q_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:gravity="center_vertical|left"
+                    android:paddingLeft="17dp"
+                    android:textColor="@color/board"
+                    android:textSize="15dp" />
+
+                </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/answer_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/q_header"
+        android:background="#F6F6F6">
+
+    </ListView>
+
+</RelativeLayout>

@@ -1,0 +1,160 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrns.map.fragment.JibunSearchFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/str_invest_search_emd"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/invert_text_header_size"
+                        />
+
+                    <EditText
+                        android:id="@+id/editbox_emd_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/edittext_n"
+                        android:imeOptions="actionDone"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:layout_weight="3"
+                        android:hint="@string/hint_emd_name"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/invert_text_content_size" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical|center_horizontal"
+                        android:text="@string/str_map_search_bunji"
+                        android:textColor="@color/secondary_text"
+                        android:textSize="@dimen/invert_text_header_size"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_weight="3"
+                        android:orientation="horizontal">
+
+                        <CheckBox
+                            android:id="@+id/checkbox_reg"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/secondary_text"
+                            android:textSize="@dimen/invert_text_header_size"
+                            android:layout_gravity="center_vertical|center_horizontal"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/activity_s_margin"
+                            android:layout_marginRight="@dimen/activity_s_margin"
+                            android:gravity="center"
+                            android:text="@string/str_map_search_san"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/invert_text_content_size"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/editbox_main_parcel_no"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:imeOptions="actionNext"
+                                android:inputType="number"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/invert_text_content_size"
+                                android:background="@drawable/edittext_n"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/activity_s_margin"
+                            android:layout_marginRight="@dimen/activity_s_margin"
+                            android:gravity="center"
+                            android:text="@string/str_invest_search_tilde"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/invert_text_content_size"/>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <EditText
+                                android:id="@+id/editbox_sub_parcel_no"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="center_vertical"
+                                android:layout_weight="1"
+                                android:imeOptions="actionDone"
+                                android:inputType="number"
+                                android:textColor="@color/primary_text"
+                                android:textSize="@dimen/invert_text_content_size"
+                                android:background="@drawable/edittext_n"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/btn_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/str_invest_search_search"
+            android:textStyle="bold"
+            android:textColor="@color/textWhite"
+            android:textSize="@dimen/invert_text_title_size"
+            android:background="@color/colorAccent"
+            />
+    </LinearLayout>
+
+</FrameLayout>

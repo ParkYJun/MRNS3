@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mcpms="http://schemas.android.com/apk/res-auto">
+
+    <!-- Search, should appear as action button -->
+    <item android:id="@+id/action_back"
+        android:icon="@drawable/action_back"
+        android:title="@string/action_back"
+        mcpms:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_home"
+        android:icon="@drawable/action_home"
+        android:title="Home"
+        mcpms:showAsAction="ifRoom" />
+
+</menu>

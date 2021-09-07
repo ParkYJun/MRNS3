@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              tools:context="com.mrns.invest.InvestResultActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_card_header"
+        android:background="@drawable/nav_bg_green"
+        android:elevation="2dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/ll_invest_nav_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/nav_btn_back_n"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/titleTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="현황조사입력"
+                        android:textColor="@color/textWhite"
+                        android:textSize="@dimen/invert_text_title_s_size"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/titleTextViewSub"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="간성11 (삼각보조점)"
+                        android:textColor="@color/textWhite"
+                        android:textSize="@dimen/invert_text_title_ss_size"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <ImageButton
+                android:id="@+id/ib_invest_nav_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/nav_btn_save_n"/>
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <RelativeLayout
+        android:id="@+id/rl_invest_insert_maxlayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <RelativeLayout
+            android:id="@+id/rl_invest_insert_roughmap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_centerInParent="true">
+            <ImageView
+                android:id="@+id/iv_invest_insert_roughmap"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginBottom="10dp">
+
+        <ImageButton
+            android:id="@+id/btnMapColor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="컬러"
+            android:textStyle="bold"
+            android:src="@drawable/btn_mapedit_color_p"
+            android:background="#00ff0000"/>
+
+        <ImageButton
+            android:id="@+id/btnMapPen"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="펜"
+            android:textStyle="bold"
+            android:src="@drawable/btn_mapedit_pen_p"
+            android:background="#00ff0000"/>
+
+        <ImageButton
+            android:id="@+id/btnMapErase"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="지우개"
+            android:textStyle="bold"
+            android:src="@drawable/btn_mapedit_eraser_p"
+            android:background="#00ff0000"/>
+
+        <ImageButton
+            android:id="@+id/btnMapUndo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="작업취소"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:src="@drawable/btn_mapedit_undo_p"
+            android:background="#00ff0000"/>
+
+        <ImageButton
+            android:id="@+id/btnMapRedo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="다시하기"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            android:src="@drawable/btn_mapedit_redo_p"
+            android:background="#00ff0000"/>
+
+        <ImageButton
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="전체삭제"
+            android:textSize="10dp"
+            android:src="@drawable/btn_mapedit_del_p"
+            android:textStyle="bold"
+            android:background="#00ff0000"/>
+
+    </LinearLayout>
+</LinearLayout>

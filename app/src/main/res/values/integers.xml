@@ -1,0 +1,57 @@
+<resources>
+    <integer name="index_insert_others">-1</integer>
+    <integer name="index_insert_mtr_info">0</integer>
+    <integer name="index_insert_mtr_sttus">1</integer>
+    <integer name="index_insert_rtk_able">2</integer>
+    <integer name="index_insert_etc">3</integer>
+    <integer name="index_insert_kimg">4</integer>
+    <integer name="index_insert_oimg">5</integer>
+    <integer name="index_insert_pimg">6</integer>
+    <integer name="index_insert_roughmap">7</integer>
+
+    <integer name="length_index_insert">8</integer>
+
+    <integer name="radio_index_insert_mtr_sttus_loss">1</integer>
+    <integer name="radio_index_insert_etc">3</integer>
+
+    <integer name="index_images_camera">0</integer>
+    <integer name="index_images_album">1</integer>
+    <integer name="index_images_memo">2</integer>
+
+    <integer name="index_invest_insert_complete_n">0</integer>
+    <integer name="index_invest_insert_complete_h">1</integer>
+    <integer name="index_invest_insert_complete_p">2</integer>
+
+    <integer name="index_pen_type">0</integer>
+    <integer name="index_dash_type">1</integer>
+    <integer name="index_pen_color">2</integer>
+    <integer name="index_pen_width">3</integer>
+    <integer name="socket_timeout">30000</integer>
+
+    <integer-array name="array_color_id">
+        <item>@color/insert_color_01</item>
+        <item>@color/insert_color_02</item>
+        <item>@color/insert_color_03</item>
+        <item>@color/insert_color_04</item>
+        <item>@color/insert_color_05</item>
+        <item>@color/insert_color_06</item>
+        <item>@color/insert_color_07</item>
+        <item>@color/insert_color_08</item>
+        <item>@color/insert_color_09</item>
+        <item>@color/insert_color_10</item>
+        <item>@color/insert_color_11</item>
+        <item>@color/insert_color_12</item>
+        <item>@color/insert_color_13</item>
+        <item>@color/insert_color_14</item>
+        <item>@color/insert_color_15</item>
+    </integer-array>
+
+    <integer-array name="array_pen_width">
+        <item>4</item>
+        <item>8</item>
+        <item>12</item>
+        <item>16</item>
+        <item>20</item>
+    </integer-array>
+
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/pNum"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:gravity="center_vertical|center"
+        android:text="순번"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/pInstFlag"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical|center"
+        android:text="설치구분"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/pInstDate"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical|center"
+        android:text="설치일자"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/pInstPerson"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:gravity="center_vertical|center"
+        android:text="설치자"
+        android:textSize="16dp" />
+
+</LinearLayout>

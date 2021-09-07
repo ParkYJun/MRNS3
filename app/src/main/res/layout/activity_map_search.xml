@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrns.map.MapSearchActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mapSearch_header"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@drawable/nav_bg_blue" >
+
+        <ImageButton
+            android:id="@+id/btn_nav_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/nav_btn_back_n" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/main_mapSearch_title"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <com.neokree.materialtabs.MaterialTabHost
+        android:id="@+id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/mapSearch_header" >
+    </com.neokree.materialtabs.MaterialTabHost>
+
+    <LinearLayout
+        android:id="@+id/spinners"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tabhost"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/str_map_search_sido"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/invert_text_header_size"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_sido"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:background="@drawable/spinner"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="@string/str_map_search_sigungu"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/invert_text_header_size"
+                />
+
+            <Spinner
+                android:id="@+id/spinner_sig"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="3"
+                android:background="@drawable/spinner"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/spinners">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/spinners"
+            android:background="#ffffff" />
+
+    </FrameLayout>
+
+</RelativeLayout>

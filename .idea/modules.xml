@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/MRNS.iml" filepath="$PROJECT_DIR$/.idea/modules/MRNS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/MRNS.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/MRNS.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/libraryMaterialTabs-release/MRNS.libraryMaterialTabs-release.iml" filepath="$PROJECT_DIR$/.idea/modules/libraryMaterialTabs-release/MRNS.libraryMaterialTabs-release.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/sugar/MRNS.sugar.iml" filepath="$PROJECT_DIR$/.idea/modules/sugar/MRNS.sugar.iml" />
+    </modules>
+  </component>
+</project>

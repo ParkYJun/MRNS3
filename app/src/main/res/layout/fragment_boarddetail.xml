@@ -1,0 +1,118 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrns.board.BoarddetailFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/boarddetail_header"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@drawable/nav_bg_green" >
+
+        <ImageButton
+            android:id="@+id/btn_nav_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/nav_btn_back_n" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="공지사항 상세정보"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="16dp" />
+    </LinearLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/boarddetail_header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/boarddetail_title"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/boardTitleText"
+                android:textSize="16dp"
+                android:background="@color/boardSelector"
+                />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="448dp"
+                android:layout_below="@+id/boarddetail_title">
+
+                <TextView
+                    android:id="@+id/boarddetail_body"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left"
+                    android:paddingTop="10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:ellipsize="end"
+                    android:maxLines="60"
+                    android:singleLine="false"
+                    android:lineSpacingExtra="15dp"
+                    android:textColor="@color/boardTitleText"
+                    android:textSize="15dp"/>
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/boardSelector"
+            android:layout_gravity="bottom">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="56dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp"
+                android:text="등록일 : "
+                android:textColor="@color/boardTitleText"
+                android:textSize="16dp"
+                />
+
+            <TextView
+                android:id="@+id/boarddetail_date"
+                android:layout_width="100dp"
+                android:layout_height="56dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="5dp"
+                android:textColor="@color/boardTitleText"
+                android:textSize="16dp"
+                />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</RelativeLayout>
+
+
+</FrameLayout>

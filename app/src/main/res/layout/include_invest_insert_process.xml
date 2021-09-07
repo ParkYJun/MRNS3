@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/down_body_border_n"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/invest_insert_margin1"
+        android:paddingStart="@dimen/invest_insert_padding2"
+        android:paddingEnd="@dimen/invest_insert_padding2">
+
+        <ImageButton
+            android:id="@+id/imgbtn_mtr_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/invest_insert_margin2"
+            android:layout_marginEnd="@dimen/invest_insert_margin2"
+            android:layout_weight="1"
+            android:background="@drawable/btn_insert_info_n" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_mtr_sttus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/invest_insert_margin2"
+            android:layout_marginEnd="@dimen/invest_insert_margin2"
+            android:background="@drawable/btn_insert_mtr_sttus_n" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_rtk_able"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/invest_insert_margin2"
+            android:layout_marginEnd="@dimen/invest_insert_margin2"
+            android:background="@drawable/btn_insert_rtk_able_n" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_etc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/invest_insert_margin2"
+            android:layout_marginEnd="@dimen/invest_insert_margin2"
+            android:background="@drawable/btn_insert_etc_n" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/invest_insert_padding2">
+
+
+    <ImageButton
+            android:id="@+id/imgbtn_kimg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+        android:layout_marginStart="@dimen/invest_insert_margin2"
+        android:layout_marginEnd="@dimen/invest_insert_margin2"
+            android:background="@drawable/btn_insert_kimg_n" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_oimg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/invest_insert_margin2"
+            android:layout_marginEnd="@dimen/invest_insert_margin2"
+            android:background="@drawable/btn_insert_oimg_n" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_pimg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/invest_insert_margin2"
+            android:layout_marginEnd="@dimen/invest_insert_margin2"
+            android:background="@drawable/btn_insert_pimg_n" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_roughmap"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="@dimen/invest_insert_margin2"
+            android:layout_marginEnd="@dimen/invest_insert_margin2"
+            android:background="@drawable/btn_insert_roughmap_n" />
+    </LinearLayout>
+
+</LinearLayout>

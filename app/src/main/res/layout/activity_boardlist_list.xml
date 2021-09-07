@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/down_body_border_n">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/board_date"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center_vertical|left"
+                android:text="2014.10.20"
+                android:textSize="15dp"
+                android:textColor="@color/boardDate"/>
+
+            <TextView
+                android:id="@+id/board_title"
+                android:layout_width="270dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dp"
+                android:gravity="center_vertical|left"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="국가 기본측량성과 평면직각좌표 원점 가산수치 변경"
+                android:textSize="17dp"
+                android:textColor="@color/boardDetail"/>
+        </LinearLayout>
+
+
+        <ImageView
+            android:id="@+id/board_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:layout_gravity="center_vertical|center"
+            android:src="@drawable/ic_notice_arrow_n"/>
+
+
+    </LinearLayout>
+
+</LinearLayout>

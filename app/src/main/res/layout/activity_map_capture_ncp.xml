@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mrns.invest.view.activity.MapCaptureNcpActivity">
+
+    <LinearLayout
+        android:id="@+id/map_header"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@drawable/nav_bg_blue" >
+
+        <ImageButton
+            android:id="@+id/btn_back_home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/nav_btn_back_n" />
+
+        <TextView
+            android:id="@+id/textview_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_alignRight="@+id/btn_back_home"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:text="@string/insert_images_make_roughmap"
+            android:textSize="18dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/btn_map_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/nav_btn_save_n"
+            android:layout_marginRight="16dp"/>
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/layout_map_capture"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/webview_map_capture"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </WebView>
+    </FrameLayout>
+</LinearLayout>

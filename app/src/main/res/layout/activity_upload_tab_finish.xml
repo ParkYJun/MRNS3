@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="0dp"
+                android:gravity="center_vertical|center"
+                android:text="종류"
+                android:textSize="16dp"
+                android:layout_weight="0.7"
+                android:layout_gravity="center_vertical|center"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="점의명칭"
+                android:gravity="center_vertical|center"
+                android:textSize="16dp"
+                android:layout_weight="1.2"
+                android:padding="4dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+                android:text="상태"
+                android:layout_weight="0.8"
+                android:textSize="16dp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+                android:text="조사일"
+                android:layout_weight="1.2"
+                android:textSize="16dp" />
+
+            <!--<ImageButton-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="24dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:gravity="center_vertical|left"-->
+                <!--android:src="@drawable/img_list_arrow_up"/>-->
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical|center"
+                android:text="조사상태"
+                android:layout_weight="1"
+                android:textSize="16dp" />
+
+            <!--<ImageButton-->
+                <!--android:layout_width="20dp"-->
+                <!--android:layout_height="24dp"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:gravity="center_vertical|left"-->
+                <!--android:src="@drawable/img_list_arrow_up"/>-->
+
+            <!--<TextView-->
+                <!--android:layout_width="50dp"-->
+                <!--android:layout_height="50dp"-->
+                <!--android:gravity="center_vertical|center"-->
+                <!--android:text="위치"-->
+                <!--android:textSize="16dp" />-->
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/FinishList"
+            android:listSelector="@color/uploadSelector"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </ListView>
+
+    </LinearLayout>
+
+</RelativeLayout>

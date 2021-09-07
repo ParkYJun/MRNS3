@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="@drawable/down_body_border_n">
+
+    <ImageView
+        android:id="@+id/r_pointSelect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="21dp"
+        android:layout_marginRight="21dp"
+        android:src="@drawable/btn_radio_n"
+        />
+
+    <TextView
+        android:id="@+id/point_title"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:paddingLeft="10dp"
+        android:textColor="@color/board"
+        android:textSize="16dp"/>
+
+    <TextView
+        android:id="@+id/point_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:textColor="@color/colorTitle"
+        android:textSize="15dp"/>
+
+
+</LinearLayout>

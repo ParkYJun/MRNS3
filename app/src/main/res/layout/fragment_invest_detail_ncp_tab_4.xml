@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity = "center_horizontal">
+
+    <ScrollView
+        android:id="@+id/detail_sub4_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/detail_header">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_body_border_n"
+                android:paddingBottom="@dimen/activity_s_margin"
+                android:paddingTop="@dimen/activity_s_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="측지계"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scGeodeticSurvey"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="측점명"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scGpointsNm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_body_border_n"
+                android:paddingBottom="@dimen/activity_s_margin"
+                android:paddingTop="@dimen/activity_s_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="위도(B)"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scLat"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="경도(L)"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scLon"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_body_border_n"
+                android:paddingBottom="@dimen/activity_s_margin"
+                android:paddingTop="@dimen/activity_s_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="타원체고"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scEh"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="방위각"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scAzimuth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_body_border_n"
+                android:paddingBottom="@dimen/activity_s_margin"
+                android:paddingTop="@dimen/activity_s_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="방향각"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scDirectionAngle"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="거리"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scDstnc"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_body_border_n"
+                android:paddingBottom="@dimen/activity_s_margin"
+                android:paddingTop="@dimen/activity_s_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="측지계\n(보조점)"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scGeodeticSurveySub"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_body_border_n"
+                android:paddingBottom="@dimen/activity_s_margin"
+                android:paddingTop="@dimen/activity_s_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="보조점명"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scSubPointsNm"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_body_border_n"
+                android:paddingBottom="@dimen/activity_s_margin"
+                android:paddingTop="@dimen/activity_s_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="보조점 경로"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scSubPointsPath"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_body_border_n"
+                android:paddingBottom="@dimen/activity_s_margin"
+                android:paddingTop="@dimen/activity_s_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="비고차"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scRelativeHeight"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_body_border_n"
+                android:paddingBottom="@dimen/activity_s_margin"
+                android:paddingTop="@dimen/activity_s_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="보조점\n위도(B)"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scLatSub"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="보조점\n경도(L)"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scLonSub"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

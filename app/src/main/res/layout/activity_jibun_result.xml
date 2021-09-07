@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mrns.map.JibunResultActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_card_header"
+        android:background="@drawable/nav_bg_blue"
+        android:elevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/imagebtn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/nav_btn_back_n"/>
+<!--
+
+            <ImageButton
+                android:id="@+id/ib_map_result_nav_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:background="@drawable/tabbar_menu02_n"/>
+-->
+
+            <TextView
+                android:id="@+id/textview_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imagebtn_back"
+                android:layout_gravity="center_vertical"
+                android:text="@string/title_activity_build_result"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/invert_text_title_size"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"/>
+
+</LinearLayout>

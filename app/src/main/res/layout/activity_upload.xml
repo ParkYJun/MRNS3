@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrns.updata.UploadActivity">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/upload_header"
+        android:layout_width="fill_parent"
+        android:layout_height="56dp"
+        android:orientation="horizontal"
+        android:background="@drawable/nav_bg_mint" >
+
+        <ImageButton
+            android:id="@+id/btn_nav_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:contentDescription="@string/empty"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/nav_btn_back_n" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="@string/main_upload_title"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+
+    <com.neokree.materialtabs.MaterialTabHost
+        android:id="@+id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="42dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/upload_header" >
+    </com.neokree.materialtabs.MaterialTabHost>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tabhost"
+        android:background="#ffffff" />
+
+
+</RelativeLayout>

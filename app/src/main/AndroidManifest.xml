@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mrns.main">
+    <!-- To auto-complete GIS SERVICE -->
+
+    <queries>
+        <package android:name="net.secuwiz.SecuwaySSL.mobileservice" />
+        <package android:name="com.raonsecure.touchen_mguard_4_0.lx"/>
+        <package android:name="com.raonsecure.motplx"/>
+    </queries>
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!--android:icon="@mipmap/ic_launcher_new"-->
+    <application
+        android:name="com.mrns.common.AppController"
+        android:allowBackup="true"
+        android:label="MRNS"
+        android:icon="@mipmap/ic_launcher_new"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:requestLegacyExternalStorage="true">
+
+        <uses-library android:name="org.apache.http.legacy" android:required="false"/>
+
+        <meta-data
+            android:name="DATABASE"
+            android:value="@string/db_name" />
+        <meta-data
+            android:name="VERSION"
+            android:value="1" />
+        <meta-data
+            android:name="QUERY_LOG"
+            android:value="true" />
+        <meta-data
+            android:name="DOMAIN_PACKAGE_NAME"
+            android:value="@string/db_record" />
+
+        <service android:name="com.mrns.login.CheckSwipeService"
+            android:stopWithTask="false" />
+
+        <activity
+            android:name="com.mrns.login.SSLLoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.mrns.login.LoginActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden"></activity>
+        <activity
+            android:name=".NoticeActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <!--            <intent-filter>
+                            <action android:name="android.intent.action.MAIN" />
+                            <category android:name="android.intent.category.LAUNCHER" />
+                        </intent-filter>-->
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.map.MapSearchActivity_"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.map.MapOllehActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.map.MapEsriActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.downdata.DownActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.updata.UploadActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.board.BoardlistActivity"
+            android:label="@string/title_activity_boardlist"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.board.BoarddetailActivity"
+            android:label="@string/title_activity_boarddetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.board.QnalistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.board.QnadetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.login.SecuwaySSLServiceApiTestActivity"
+            android:label="SSL_VPN_TEST"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name="com.mrns.map.MapWebActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.updata.UploadWorkDetailActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.updata.UploadFinishDetailActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.map.PointResultActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.map.BuildResultActivity_"
+            android:label="@string/title_activity_build_result"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.map.JibunResultActivity_"
+            android:label="@string/title_activity_build_result"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.invest.view.activity.InvestSearchActivity_"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.invest.view.activity.InvestResultActivity_"
+            android:label="@string/title_activity_invest_result"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.invest.view.activity.InvestDetailActivity_"
+            android:label="@string/title_activity_invest_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.invest.view.activity.InvestDetailNcpActivity_"
+            android:label="@string/title_activity_invest_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.invest.innerDetail.history.investHistoryListActivity_"
+            android:label="@string/title_activity_invest_history_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mrns.invest.innerDetail.install.InstallHistoryListActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mrns.invest.innerDetail.history.investHistoryDetailActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mrns.invest.innerDetail.install.InstallHistoryDetailActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- INVEST -->
+        <activity
+            android:name="com.mrns.invest.view.activity.InvestInsertInfo_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mrns.invest.view.activity.InvestInsertStatus_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mrns.invest.view.activity.InvestInsertEtc_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mrns.invest.view.activity.InvestInsertImages_"
+            android:screenOrientation="portrait"
+            android:configChanges="orientation|screenSize"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mrns.invest.view.activity.InvestInsertImagesDetail_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mrns.invest.view.activity.MapCaptureActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.mrns.invest.view.activity.InvestInsertNcpInfo_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mrns.invest.view.activity.InvestInsertNcpStatus_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mrns.invest.view.activity.InvestInsertNcpEtc_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mrns.invest.view.activity.InvestInsertNcpImages_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mrns.invest.view.activity.InvestInsertNcpImagesDetail_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mrns.invest.view.activity.MapCaptureNcpActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.mrns.updata.UploadWorkDetailNcpActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.mrns.invest.innerDetail.history.investHistoryDetailNcpActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.mrns.invest.innerDetail.install.InstallHistoryListNcpActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="com.mrns.updata.UploadFinishDetailNcpActivity_"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <activity
+            android:name="com.mrns.invest.innerDetail.history.investHistoryListNcpActivity_"
+            android:label="@string/title_activity_invest_history_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name="team.uptech.motionviews.ui.StickerSelectActivity"
+            android:label="@string/add_sticker" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+       </provider>
+        <provider
+            android:name="com.raonsecure.touchen_mguard_4_0.provider.MGuardSdkFileProvider"
+            android:authorities="${applicationId}.provider.MGuardSdkFileProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,114 @@
+<resources>
+    <string name="str_invest_search_sido">시도</string>
+    <string name="str_invest_search_sigungu">시군구</string>
+    <string name="str_invest_search_emd">읍면동리</string>
+    <string name="str_invest_search_point_class">점의 구분</string>
+    <string name="str_invest_search_pkind">점의 종류</string>
+    <string name="str_invest_search_sstate">조사상태</string>
+    <string name="str_invest_search_date">조사일</string>
+    <string name="str_invest_search_inqde">설치일</string>
+    <string name="str_invest_search_sdate"> 시작일</string>
+    <string name="str_invest_search_edate"> 종료일</string>
+    <string name="str_invest_search_pname">점의번호</string>
+    <string name="str_invest_search_point">기준점</string>
+    <string name="str_invest_search_search">검색</string>
+    <string name="str_invest_search_tilde">~</string>
+    <string name="str_invest_search_promt">:: 선택 ::</string>
+
+
+    <string name="str_invest_result_type">종류</string>
+    <string name="str_invest_result_defnm">점의번호</string>
+    <string name="str_invest_result_state">상태</string>
+    <string name="str_invest_result_install">설치일</string>
+    <string name="str_invest_invest_date">조사일</string>
+    <string name="str_invest_result_invest">조사상태</string>
+    <string name="str_invest_result_location">위치</string>
+
+
+    <string name="str_invest_detail_input">현황조사\n입력</string>
+    <string name="str_invest_detail_history">현황이력\n조회</string>
+    <string name="str_invest_detail_install">설치연혁\n조회</string>
+    <string name="str_invest_detail_gis">위치\n보기</string>
+    <string name="str_invest_detail_point">기준점\n검색</string>
+
+    <string name="str_invest_search_open">검색 열기</string>
+    <string name="str_invest_search_close">검색 닫기</string>
+
+
+
+    <string name="str_invest_finish">현황조사 입력을 완료 하시겠습니까?</string>
+    <string name="str_invest_loading">불러오는중</string>
+    <string name="str_invest_saveloading">저장중</string>
+    <string name="str_invest_save">저장에 성공하였습니다</string>
+    <string name="str_invest_photo">사진이 없습니다.</string>
+    <string name="str_invest_map">약도가 없습니다.</string>
+    <string name="str_invest_save_q">저장하시겠습니까?</string>
+    <string name="str_invest_mapsave_q">현재 지도를 저장하시겠습니까?</string>
+    <string name="str_invest_ok">확인</string>
+    <string name="str_invest_warning">경고</string>
+    <string name="str_invest_cancel">취소</string>
+
+    <string name="str_detail_claertitle">삭제</string>
+    <string name="str_detail_claermessage">화면을 삭제합니다.</string>
+
+    <string name="db_record">com.mrns.invest.record</string>
+
+    <string name="url_liststtusinqhist">/MRNS/data/listSttusInqHist.json</string>
+    <string name="url_viewsttusinqhist">/MRNS/data/viewSttusInqHist.json</string>
+    <string name="url_listinstlhist">/MRNS/data/listInstlHist.json</string>
+    <string name="url_viewinstlhistt">/MRNS/data/viewInstlHist.json</string>
+<!-- 국가기준점 현황이력-->
+    <string name="url_liststtusinqhistncp">/MRNS/data/listSttusInqHistNcp.json</string>
+    <string name="url_viewsttusinqncphist">/MRNS/data/viewSttusInqNcpHist.json</string>
+    <string name="url_listinstlncphist">/MRNS/data/listInstlNcpHist.json</string>
+    <string name="url_viewpoint">/MRNS/map/viewPoint.json</string>
+
+    <!-- 국가기준점 지도에서 넘어오기-->
+    <string name="url_viewpointInfo">/MRNS/map/viewPointInfo.json</string>
+    <string name="url_viewpointsttus">/MRNS/map/viewPointSttus.json</string>
+    <string name="url_viewpointunity">/MRNS/map/viewPointUnity.json</string>
+    <string name="url_viewpointrslt">/MRNS/map/viewPointRslt.json</string>
+    <string name="url_viewpointtraverrslt">/MRNS/map/viewPointTraverRslt.json</string>
+    <string name="url_viewpointsub">/MRNS/map/viewPointSub.json</string>
+    <string name="url_liststtusinqbefore">/MRNS/data/listSttusInqBefore.json</string>
+
+    <string name="f_jpg">.jpg</string>
+    <string name="fn_rogimage">%1$s_%2$s_rogimage</string>
+    <string name="fn_kimage">%1$s_%2$s_kimage</string>
+    <string name="fn_oimage">%1$s_%2$s_oimage</string>
+    <string name="fn_pimage">%1$s_%2$s_pimage</string>
+
+    <string name="imagesize_4">1600</string>
+    <string name="imagesize_3">1200</string>
+    <string name="imagesize_5">900</string>
+
+    <string name="invest_inq_represent">대표조사자</string>
+    <string name="invest_inq_real">실제조사자</string>
+    <string name="invest_inq_head_office">본부</string>
+    <string name="invest_inq_branch">지사</string>
+    <string name="invest_inq_name">성명</string>
+    <string name="invest_inq_position">직위</string>
+    <string name="invest_inq_id">사번</string>
+
+    <string name="message_insert_in_std">지적기준점 현황조사를 진행중입니다.\n국가/공공기준점 현황조사시 진행하실 수 있습니다.</string>
+    <string name="message_insert_in_np">국가/공공기준점 현황조사를 진행중입니다.\n지적기준점 현황조사시 진행하실 수 있습니다.</string>
+    <string name="message_invalidate_user_id">사용자 정보를 찾을 수 없습니다.\n정확한 사번을 입력해주시기 바랍니다.</string>
+    <string name="message_error_empty_name">%1$s조사자 사번을 통해 조사자의 성명을 입력해주시기 바랍니다.</string>
+
+    <string name="key_represent_inq_session">representInqSession</string>
+    <string name="key_real_inq_session">realInqSession</string>
+    <string name="key_inq_user_id">userId</string>
+    <string name="key_inq_user_name">userName</string>
+    <string name="key_inq_position_code">positionCode</string>
+    <string name="key_inq_branch_code">branchCode</string>
+
+    <string name="url_getUserInfo">/MRNS/data/getUserInfo.json</string>
+    <string name="url_get_sido_list">/MRNS/data/getSidoList.json</string>
+    <string name="url_get_sig_list">/MRNS/data/getSigList.json</string>
+    <string name="url_search_points">/MRNS/data/searchPoints.json</string>
+    <string name="url_search_parcel">/MRNS/data/searchParcel.json</string>
+    <string name="url_search_road_address">/MRNS/data/searchRoadAddress.json</string>
+    <string name="url_search_buildings">/MRNS/data/searchBuildings.json</string>
+
+    <string name="hint_etc_input">기타사항 입력란</string>
+</resources>

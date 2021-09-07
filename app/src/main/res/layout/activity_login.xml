@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.mrns.login.LoginActivity"
+    android:background="@drawable/bg_login">
+
+    <LinearLayout
+        android:id="@+id/login_header"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="56dp">
+
+        <TextView
+            android:text=""
+            android:layout_width="268dp"
+            android:layout_height="match_parent"
+            />
+
+
+        <RelativeLayout
+            android:id="@+id/layoutOnoff"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right">
+
+
+            <ImageView
+                android:id="@+id/switchOn"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/btn_switch_on"/>
+
+            <ImageView
+                android:id="@+id/switchOff"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/btn_switch_off"/>
+
+
+            <TextView
+                android:id="@+id/textOn"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|center"
+                android:text="@string/onText"
+                android:layout_marginRight="23dp"
+                android:textColor="@color/ontext"
+                android:textSize="12dp"/>
+
+            <TextView
+                android:id="@+id/textOff"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical|center"
+                android:text="@string/offText"
+                android:layout_marginRight="39dp"
+                android:textColor="@color/offtext"
+                android:textSize="12dp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/login_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:src="@drawable/img_login_title"
+        android:layout_below="@+id/login_header"/>
+
+    <ScrollView
+        android:id="@+id/sslvpn_form_s"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/login_title">
+
+        <LinearLayout android:id="@+id/login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText android:id="@+id/userid" android:layout_width="match_parent"
+                    android:layout_height="50dp" android:hint="@string/prompt_userid"
+                    android:inputType="textUri|textCapCharacters" android:maxLines="1"
+                    android:background="@drawable/edittext_n"
+                    android:singleLine="true"
+                    android:clickable="false"
+                    android:contextClickable="false"  />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText android:id="@+id/optpw" android:layout_width="match_parent"
+                    android:layout_height="50dp" android:hint="@string/prompt_password"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:inputType="numberPassword"
+                    android:background="@drawable/edittext_n"
+                    android:maxLines="1" android:singleLine="true"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:layout_width="150dp"
+                    android:layout_height="40dp"
+                    android:text="아이디저장"
+                    android:id="@+id/saveId_ck"
+                    android:checked="false" />
+
+                <Button
+                    android:id="@+id/opt_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center|center_vertical"
+                    android:layout_marginLeft="30dp"
+                    android:text="OTP실행"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorEdge"
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_otp"/>
+
+            </LinearLayout>
+
+            <Button android:id="@+id/login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="로그인"
+                android:textSize="16dp"
+                android:textColor="@color/colorEdge"
+                android:textStyle="bold"
+                android:background="@drawable/btn_login_bg_n"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

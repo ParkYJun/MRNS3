@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/detail_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.mrns.invest.view.activity.InvestDetailActivity"
+        android:layout_below="@+id/detail_header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/detail_one"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="관리번호"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scManageNum"
+                    android:layout_width="105dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="2015.12.24"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="12dp"
+                    android:text="점의번호"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scPointNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"
+                    android:text="간성11 (삼각보조점)"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_two"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_one"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="점의정류"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scPointType"
+                    android:layout_width="105dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="12dp"
+                    android:text="도선등급"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scDosunGrade"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_three"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_two"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="설치구분"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+
+                <TextView
+                    android:id="@+id/scInstType"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_four"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_three"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="표지재질"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scPageType"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_five"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_four"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="사업구분"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scBizType"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_six"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_five"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="지구(사업)명"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scBizName"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_seven"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_six"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="설치일자"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scInstDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_eight"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_seven"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="설치기관"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scInstOrg"
+                    android:layout_width="155dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="2015.12.24"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="12dp"
+                    android:text="소속"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scSoSok"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_nine"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_eight"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="직급"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scGrade"
+                    android:layout_width="105dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="12dp"
+                    android:text="성명"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/scName"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/detail_nine"
+                android:orientation="horizontal">
+
+                <include
+                    layout="@layout/fragment_invest_detail_tab_2_sub1"
+                    android:id="@+id/invest_detail_sub1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                </include>
+
+                <include
+                    layout="@layout/fragment_invest_detail_tab_2_sub2"
+                    android:id="@+id/invest_detail_sub2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                </include>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

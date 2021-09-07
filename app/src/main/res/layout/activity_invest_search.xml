@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:focusable="true"
+              android:focusableInTouchMode="true"
+              android:orientation="vertical"
+              tools:context="com.mrns.invest.view.activity.InvestSearchActivity">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_card_header"
+        android:background="@drawable/nav_bg_green"
+        android:elevation="2dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/ib_invest_search_nav_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/nav_btn_back_n"
+                android:padding="@dimen/activity_horizontal_margin"/>
+            <TextView
+                android:id="@+id/titleTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_centerInParent="true"
+                android:text="@string/title_activity_invest_serach"
+                android:textColor="@color/textWhite"
+                android:textSize="@dimen/invert_text_title_size"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/str_invest_search_sido"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/invert_text_header_size"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/sp_invest_search_sido"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/str_invest_search_sigungu"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/invert_text_header_size"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/sp_invest_search_sigungu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/str_invest_search_pkind"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/invert_text_header_size"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/sp_invest_search_pkind"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/str_invest_search_date"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/invert_text_header_size"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/et_invest_sdate"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/str_invest_search_sdate"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/invert_text_content_size"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_s_margin"
+                        android:layout_marginRight="@dimen/activity_s_margin"
+                        android:gravity="center"
+                        android:text="@string/str_invest_search_tilde"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/invert_text_content_size"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/et_invest_edate"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/str_invest_search_edate"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/invert_text_content_size"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/str_invest_search_pname"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/invert_text_header_size"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/et_invest_spname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:imeOptions="actionNext"
+                            android:inputType="number"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/invert_text_content_size"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_s_margin"
+                        android:layout_marginRight="@dimen/activity_s_margin"
+                        android:gravity="center"
+                        android:text="@string/str_invest_search_tilde"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/invert_text_content_size"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/et_invest_epname"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:imeOptions="actionDone"
+                            android:inputType="number"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/invert_text_content_size"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_horizontal_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/str_invest_search_name"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/invert_text_header_size"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/et_invest_search_pointname"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:imeOptions="actionDone"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/invert_text_content_size"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_invest_search_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_invest_search_search"
+        android:textSize="@dimen/invert_text_content_size"
+        />
+</LinearLayout>

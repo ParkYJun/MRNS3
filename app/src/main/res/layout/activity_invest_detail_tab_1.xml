@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/detail_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.mrns.invest.view.activity.InvestDetailActivity"
+        android:layout_below="@+id/detail_header">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/detail_one"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:paddingLeft="16dp"
+                    android:text="조사\n년월일"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/fDate"
+                    android:layout_width="105dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="12dp"
+                    android:text="소속"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/fsosok"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_two"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_one"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="직급"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/fGrade"
+                    android:layout_width="105dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="12dp"
+                    android:text="성명"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/fName"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_three"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_two"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="표지의\n재질"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/fPageType1"
+                    android:layout_width="140dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/dropdown_n"/>
+
+                <TextView
+                    android:id="@+id/fPageType2"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_four"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_three"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="표지의\n상태"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/fPageState1"
+                    android:layout_width="140dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/dropdown_n"/>
+
+                <TextView
+                    android:id="@+id/fPageState2"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_five"
+                android:layout_width="fill_parent"
+                android:layout_height="66dp"
+                android:layout_below="@+id/detail_four"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="위성측량\n가능여부"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/fSettle1"
+                    android:layout_width="140dp"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/dropdown_n"/>
+
+                <TextView
+                    android:id="@+id/fSettle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/detail_six"
+                android:layout_width="fill_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/detail_five"
+                android:background="@drawable/down_body_border_n">
+
+                <TextView
+                    android:layout_width="78dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="left"
+                    android:paddingLeft="16dp"
+                    android:text="조사내용"
+                    android:textSize="14dp"
+                    android:textColor="@color/uploadDetail"/>
+
+                <TextView
+                    android:id="@+id/fInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_gravity="center_vertical|right"
+                    android:gravity="center"
+                    android:layout_marginRight="16dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/uploadDetailValue"
+                    android:background="@drawable/edittext_n"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <!--<GridLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:rowCount="2"-->
+        <!--android:columnCount="4"-->
+        <!--android:paddingLeft="7dp"-->
+        <!--android:paddingRight="7dp"-->
+        <!--android:useDefaultMargins="false">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:text="조사년월일"-->
+            <!--android:layout_row="0"-->
+            <!--android:layout_column="0" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:inputType="date"-->
+            <!--android:id="@+id/inq_date"-->
+            <!--android:layout_row="0"-->
+            <!--android:layout_column="1" />-->
+
+        <!--<TextView-->
+
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:text="소속"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_row="0"-->
+            <!--android:layout_column="2" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:inputType="text"-->
+            <!--android:id="@+id/inq_psitn"-->
+            <!--android:layout_row="0"-->
+            <!--android:layout_column="3" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:text="직급"-->
+            <!--android:layout_row="1"-->
+            <!--android:layout_column="0" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:inputType="text"-->
+            <!--android:id="@+id/inq_clsf"-->
+            <!--android:layout_row="1"-->
+            <!--android:layout_columnSpan="1" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:text="성명"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_row="1"-->
+            <!--android:layout_column="2" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:inputType="text"-->
+            <!--android:id="@+id/inq_nm"-->
+            <!--android:layout_row="1"-->
+            <!--android:layout_column="3" />-->
+    <!--</GridLayout>-->
+
+    <!--<GridLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="10dp"-->
+        <!--android:rowCount="2"-->
+        <!--android:columnCount="4"-->
+        <!--android:paddingLeft="7dp"-->
+        <!--android:paddingRight="7dp"-->
+        <!--android:useDefaultMargins="false">-->
+
+        <!--<TextView-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:text="조사년월일"-->
+            <!--android:layout_row="0"-->
+            <!--android:layout_column="0" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:inputType="date"-->
+            <!--android:id="@+id/inq_date"-->
+            <!--android:layout_row="0"-->
+            <!--android:layout_column="1" />-->
+
+        <!--<TextView-->
+
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:text="소속"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_row="0"-->
+            <!--android:layout_column="2" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:inputType="text"-->
+            <!--android:id="@+id/inq_psitn"-->
+            <!--android:layout_row="0"-->
+            <!--android:layout_column="3" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:text="직급"-->
+            <!--android:layout_row="1"-->
+            <!--android:layout_column="0" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:inputType="text"-->
+            <!--android:id="@+id/inq_clsf"-->
+            <!--android:layout_row="1"-->
+            <!--android:layout_columnSpan="1" />-->
+
+        <!--<TextView-->
+            <!--android:layout_width="70dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:text="성명"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_row="1"-->
+            <!--android:layout_column="2" />-->
+
+        <!--<EditText-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="45dp"-->
+            <!--android:inputType="text"-->
+            <!--android:id="@+id/inq_nm"-->
+            <!--android:layout_row="1"-->
+            <!--android:layout_column="3" />-->
+    <!--</GridLayout>-->
+
+</LinearLayout>

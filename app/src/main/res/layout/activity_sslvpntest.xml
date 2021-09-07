@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/addr"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Address :"/>
+    <EditText
+        android:id="@+id/addrEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:singleLine="true"
+        android:layout_below="@id/addr"
+        android:text="https://103.7.191.182"/>
+    <TextView
+        android:id="@+id/userid"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addrEdit"
+        android:text="ID :"/>
+    <EditText
+        android:id="@+id/useridEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:singleLine="true"
+        android:layout_below="@id/userid"
+        android:text="A90005"/>
+    <TextView
+        android:id="@+id/userpw"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/useridEdit"
+        android:text="Password :"/>
+    <EditText
+        android:id="@+id/userpwEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/editbox_background"
+        android:inputType="text"
+        android:singleLine="true"
+        android:layout_below="@id/userpw"
+        android:text="lxlx!1234"/>
+
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="start"
+        android:onClick="handleClick"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="stop"
+        android:onClick="handleClick2"
+        />
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="status"
+        android:onClick="handleClick3"
+        />
+
+</LinearLayout>

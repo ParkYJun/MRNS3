@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    cardView:cardElevation="@dimen/table_card_elevation"
+    cardView:cardCornerRadius="@dimen/table_card_corner_radius"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_margin="1dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginLeft="@dimen/activity_llll_margin"
+        android:layout_marginRight="@dimen/activity_lllll_margin"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_list_address"/>
+
+        <TextView
+            android:id="@+id/textview_parcel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_vertical|left"
+            android:layout_marginLeft="15dp"
+            android:text="강남구 강남대로494 (논현동) , 06119"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textSize="14dp"/>
+
+
+        <ImageView
+            android:id="@+id/imageview_move_map"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_notice_arrow_p"
+            android:scaleType="center"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

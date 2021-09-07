@@ -1,0 +1,26 @@
+<resources>
+    <dimen name="activity_s_margin">4dp</dimen>
+    <dimen name="activity_l_margin">32dp</dimen>
+    <dimen name="activity_ll_margin">31dp</dimen>
+    <dimen name="activity_lll_margin">128dp</dimen>
+    <dimen name="activity_llll_margin">21dp</dimen>
+    <dimen name="activity_lllll_margin">22dp</dimen>
+    <dimen name="activity_arrow_margin">35dp</dimen>
+
+    <dimen name="invert_text_header_size">16sp</dimen>
+    <dimen name="invert_text_header_s_size">14sp</dimen>
+    <dimen name="invert_text_header_ss_size">12sp</dimen>
+    <dimen name="invert_text_header_sss_size">8sp</dimen>
+    <dimen name="invert_text_content_size">14sp</dimen>
+    <dimen name="invert_text_content_ss_size">14sp</dimen>
+    <dimen name="invert_text_title_size">20sp</dimen>
+    <dimen name="invert_text_title_s_size">18sp</dimen>
+    <dimen name="invert_text_title_ss_size">16sp</dimen>
+
+    <dimen name="table_card_elevation">2dp</dimen>
+    <dimen name="table_card_corner_radius">2dp</dimen>
+    <dimen name="height_card_header">48dp</dimen>
+
+    <dimen name="activity_invest_insert_info_margin">16dp</dimen>
+</resources>
+

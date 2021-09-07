@@ -1,0 +1,581 @@
+<resources>
+    <string name="app_name">MRNS</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">login</string>
+    <string name="title_activity_map">map</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <!-- Strings related to MGURAD -->
+    <string name="MGUARD_ADDR">"https://mdm.lx.or.kr"</string>
+    <string name="MGUARD_APK">MGuard lx 4.2.7.apk</string>
+    <string name="MGUARD_PACKAGE">co.kr.lumensoft.mguard.lx</string>
+
+    <!-- Strings related to KT_MDM_PACKAGE -->
+    <string name="KT_MDM_PACKAGE">com.kt.dm.saas.mdm</string>
+
+    <!-- Strings related to SSLVPN -->
+    <string name="sslvpn_addr">https://103.7.191.182</string>
+    <string name="sslid">A90005</string>
+    <string name="sslpw">lxlx!1234</string>
+    <string name="SECUWAYSSL_APK">SecuwaySSLService.apk</string>
+    <string name="SECUWAYSSL_PACKAGE">net.secuwiz.SecuwaySSL.mobileservice</string>
+
+    <string name="MDM_URL">https://emm.lx.or.kr</string>
+    <string name="MDM_PACKAGE">com.raonsecure.touchen_mguard_4_0.lx</string>
+    <string name="MDM_VERSIONCODE">23</string>
+
+    <!-- 운영서버 -->
+    <!--<string name="server_ip_">http://172.17.4.21:8080</string>-->
+    <string name="server_ip">http://172.17.4.21:8080</string>
+    <!--<string name="server_ip">http://172.17.4.21:8080</string>-->
+
+    <!-- IMG 파일 삭제 시간 -->
+    <string name="set_del_time">240</string>
+
+    <!-- 로컬<자료 -->
+    <string name="path_sqlite">/MRNS/sqldata/</string>
+    <string name="path_mapdata">/MRNS/mapdata/</string>
+    <string name="path_img">/MRNS/img/</string>
+
+    <!-- DB 관련 -->
+    <string name="db_base">MRNS.db</string>
+    <string name="db_name">MRNS.db</string>
+    <string name="db_path">/data/data/com.mrns.main/databases</string>
+    <string name="db_full_name">/data/data/com.mrns.main/databases/MRNS.db</string>
+    <string name="db_user_full_name">/data/data/com.mrns.main/databases/MRNS_USER.db</string>
+
+    <string name="message_error_timeout">서버 응답시간이 초과했습니다.\n관리자에게 문의바랍니다.</string>
+
+    <!--메인페이지 -->
+    <string name="req_maindata">/MRNS/board/lastBbs.json</string>
+    <string name="req_net_offline">네트워크 연결이 끊겼습니다!\n오프라인 모드로 변경합니다.</string>
+    <string name="req_net_online">네트워크가 연결 되었습니다.!\n온라인 모드로 변경합니다.</string>
+    <string name="req_mobile_notice">/MRNS/board/mobileNotice.json</string>
+
+    <!--올레맵 -->
+    <string name="req_ollehmap">/MRNS/olMap.html</string>
+    <string name="req_capture">/MRNS/captureMap.html</string>
+
+    <!--현황조사 약도 -->
+    <string name="req_rog_map">/MRNS/data/sttusImage/rogMap.json</string>
+    <!--현황조사 근경 -->
+    <string name="req_k_img">/MRNS/data/sttusImage/kImg.json</string>
+    <!--현황조사 원경 -->
+    <string name="req_o_img">/MRNS/data/sttusImage/oImg.json</string>
+    <!--현황조사 측정점 위치설명도 -->
+    <string name="req_p_img">/MRNS/data/sttusImage/msurpointsLcDrw.json</string>
+
+    <!--설치연혁 측정점 위치설명도 -->
+    <string name="req_drw_img">/MRNS/data/instlImage/drw.json</string>
+    <!--설치연혁 약도 -->
+    <string name="req_map_img">/MRNS/data/instlImage/map.json</string>
+
+
+
+    <!--현황조사 약도 -->
+    <string name="req_rog_map_ncp">/MRNS/data/sttusImageNcp/rogMap.json</string>
+    <!--현황조사 근경 -->
+    <string name="req_k_img_ncp">/MRNS/data/sttusImageNcp/kImg.json</string>
+    <!--현황조사 원경 -->
+    <string name="req_o_img_ncp">/MRNS/data/sttusImageNcp/oImg.json</string>
+    <!--현황조사 측정점 위치설명도 -->
+    <string name="req_p_img_ncp">/MRNS/data/sttusImageNcp/msurpointsLcDrw.json</string>
+
+
+    <!--지도검색 -->
+    <string name="req_sido">/MRNS/map/listCtprvn.json</string>
+    <string name="req_sigungu">/MRNS/map/listSig.json</string>
+    <string name="req_dong">/MRNS/map/listEmd.json</string>
+    <string name="req_ri">/MRNS/map/listLi.json</string>
+    <string name="req_doro">/MRNS/map/listRoad.json</string>
+    <string name="req_dorolist">/MRNS/map/listDetailRoad.json</string>
+    <string name="req_jibunlist">/MRNS/map/listDetailParcel.json</string>
+    <string name="req_buildlist">/MRNS/map/listDetailBuld.json</string>
+    <string name="req_pointlist">/MRNS/map/listPoint.json</string>
+    <string name="req_pointInfo">/MRNS/map/viewPoint.json</string>
+    <string name="req_pointInfo_gis">/MRNS/map/viewBasePoint.json</string>
+    <string name="req_insert_data_gis">/MRNS/data/selectStdrspotUnity.json</string>
+    <string name="req_insert_data_file">/MRNS/data/unityFileDownload.json</string>
+<!--국가기준점-->
+    <string name="req_pointInfo_ncp_gis">/MRNS/map/viewNcpPoint.json</string>
+    <string name="req_insert_data_ncp_gis">/MRNS/data/selectStdrspotNcpUnity.json</string>
+    <string name="req_insert_data_ncp_rstl_gis">/MRNS/data/selectStdrspotNcpRstl.json</string>
+    <string name="req_insert_data_ncp_traver_gis">/MRNS/data/selectStdrspotNcpTraver.json</string>
+    <string name="req_insert_data_ncp_traver_sub">/MRNS/data/selectStdrspotNcpSub.json</string>
+    <string name="req_insert_data_ncp_sttus_inq">/MRNS/data/selectStdrspotSttusInq.json</string>
+    <string name="url_insert_nc_data_download">/MRNS/data/ncFileDownload.json</string>
+
+    <!--로그인 -->
+    <string name="req_sqlite">/MRNS/user/templateDownload.json</string>
+    <string name="req_login">/MRNS/user/loginCheck.json</string>
+
+    <string name="req_test">/MRNS/map/test.json</string>
+
+    <!--공지사항 QnA -->
+    <string name="req_boardlist">/MRNS/board/listNotice.json</string>
+    <string name="req_boarddetail">/MRNS/board/viewNotice.json</string>
+    <string name="req_qnalist">/MRNS/board/listQnA.json</string>
+    <string name="req_qnadetail">/MRNS/board/viewQnA.json</string>
+
+    <!--현황자료 내려받기 -->
+    <string name="req_jisalist">/MRNS/data/listDept.json</string>
+    <string name="req_downlist">/MRNS/data/listMapData.json</string>
+    <string name="req_downfile">/MRNS/data/mapFileDownload.json</string>
+    <string name="req_investlist">/MRNS/data/listInqBfStdrspot.json</string>
+    <string name="req_downPoint">/MRNS/data/earlyFileDownload.json</string>
+    <!--국가기준점-->
+    <string name="req_downNcplist">/MRNS/data/listInqBfNcpPi.json</string>
+    <string name="req_downNcpPoint">/MRNS/data/ncpFileDownload.json</string>
+    <string name="req_finishlist_ncp">/MRNS/data/uploadInqBeforeNcpList.json</string>
+    <string name="req_finishdetail_ncp">/MRNS/data/uploadInqBeforeNcpView.json</string>
+    <!--국가기준점-->
+
+    <!--현황자료 올리기 -->
+    <string name="req_finishlist">/MRNS/data/uploadInqBeforeList.json</string>
+    <string name="req_finishdetail">/MRNS/data/uploadInqBeforeView.json</string>
+    <string name="req_uploadoimg">/MRNS/data/uploadImage/oImg.json</string>
+    <string name="req_uploadkimg">/MRNS/data/uploadImage/kImg.json</string>
+    <string name="req_uploadrimg">/MRNS/data/uploadImage/rogMap.json</string>
+    <string name="req_uploadpimg">/MRNS/data/uploadImage/msurpointsLcDrw.json</string>
+    <string name="req_upload_date">조사\n년월일</string>
+    <string name="req_upload_affiliation">소속</string>
+    <string name="req_upload_position">직급</string>
+    <string name="req_upload_positions">직위</string>
+    <string name="req_upload_name">성명</string>
+    <string name="req_upload_number">사번</string>
+    <string name="req_upload_cancel_complete">조사완료취소</string>
+    <string name="req_upload_view_position">위치보기</string>
+    <string name="req_upload_transmit">전송</string>
+
+    <!-- 키 -->
+    <string name="key_exclude_notice">excludeNotice</string>
+    <string name="key_shared_preferences">pref</string>
+    <string name="key_stdr_spot_sn">stdrspotSn</string>
+    <string name="key_stdr_spot_sn_json">stdrspot_sn</string>
+    <string name="key_base_point_no">basePointNo</string>
+    <string name="key_base_point_no_json">base_point_no</string>
+    <string name="key_bonline">bOnline</string>
+    <string name="key_status">STATUS</string>
+    <string name="key_check_id">check1</string>
+    <string name="key_save_id">saveUserId</string>
+    <string name="key_is_geo">isGeo</string>
+    <string name="key_mode">mode</string>
+    <string name="key_title">title</string>
+    <string name="key_date">date</string>
+    <string name="key_point_name">pointNm</string>
+    <string name="key_file_name">fileName</string>
+    <string name="key_adm_code">admCd</string>
+    <string name="key_point_class_code">pointClassCode</string>
+    <string name="key_point_kind_code">pointsKndCd</string>
+    <string name="key_start_date">startDate</string>
+    <string name="key_end_date">endDate</string>
+    <string name="key_start_point_name">startPointName</string>
+    <string name="key_end_point_name">endPointName</string>
+    <string name="key_inquire_descent_sorting">inqDeSorting</string>
+    <string name="key_inquire_status">inqSttus</string>
+    <string name="key_index_insert">indexInsert</string>
+    <string name="key_type">type</string>
+    <string name="key_fid">fId</string>
+    <string name="key_android">Android</string>
+    <string name="key_insert_bcomplete">InsertBComplete_%1$d_%2$d</string>
+    <string name="key_width">width</string>
+    <string name="key_height">height</string>
+    <string name="key_emd_name">emdName</string>
+    <string name="key_start_point_no">startPointNo</string>
+    <string name="key_end_point_no">endPointNo</string>
+    <string name="key_point_secd">pointSecd</string>
+    <string name="key_mtr_status_code">mtrStatusCode</string>
+    <string name="key_install_date">installDate</string>
+    <string name="key_inq_date">inqDate</string>
+
+    <!-- 국가기준점-->
+    <string name="key_npu_sn">npuSn</string>
+    <string name="key_npu_sn_json">npu_sn</string>
+    <string name="key_find_route">findRoute</string>
+
+
+
+    <!-- Exception text-->
+    <string name="exception">Exception</string>
+    <string name="iOException">IOException</string>
+    <string name="indexOutOfBoundsException">IndexOutOfBoundsException</string>
+    <string name="jSONException">JSONException</string>
+    <string name="nullPointerException">NullPointerException</string>
+    <string name="fileNotFoundException">FileNotFoundException</string>
+    <string name="remoteException">RemoteException</string>
+    <string name="mguardAuthException">MguardAuthException</string>
+    <string name="nameNotFoundException">NameNotFoundException</string>
+    <string name="cursorIndexOutOfBoundsException">CursorIndexOutOfBoundsException</string>
+    <string name="volleyError">VolleyError</string>
+    <string name="done">done</string>
+
+    <string name="downMapErrorMsg">지도 데이터를 선택해주세요.</string>
+    <string name="downPointListErrorMsg">현황조사 자료를 선택해주세요.</string>
+    <string name="downConfirm">현황조사 자료를 새로 받습니다. \n 받으시겠습니까?</string>
+    <string name="downCkData">현황조사완료 자료가 있습니다. \n현황자료올리기 페이지로 이동합니다.</string>
+
+    <!--현황자료 올리기 -->
+    <string name="information_uploading">현황조사 자료를 업로드 중입니다.</string>
+    <string name="question_change_status">현황조사상태를 변경하시겠습니까?</string>
+    <string name="req_uploadInvest">/MRNS/data/updateSttusInqBefore.json</string>
+    <string name="goToChageStatus">현황조사 상태를 변경하였습니다.\n현황자료 올리기 리스트 페이지로 이동합니다.</string>
+    <string name="uploadComplete">현황조사 업로드를 완료했습니다.</string>
+    <string name="uploadError">현황자료 리스트가 없습니다. 현황자료 저장을 완료해 주세요.</string>
+    <string name="pointInfo">결과값이 없습니다.</string>
+    <string name="yes">예</string>
+    <string name="no">아니오</string>
+    <string name="inquire_status_ongoing">조사중</string>
+    <string name="inquire_status_complete">조사완료</string>
+    <!--현황조사완료(전송전)시 지적기준점레이어 조사연도 업데이트-->
+    <string name="req_updateMapInqYear">/MRNS/data/updateMapInqYear.json</string>
+
+    <!-- 국가기준점 현황조사 업로드-->
+    <string name="req_uploadInvestNcp">/MRNS/data/updateSttusInqNcpBf.json</string>
+
+    <!-- Strings related to Login -->
+    <string name="prompt_sslvpnid">아이디</string>
+    <string name="prompt_sslvpnpw">비밀번호</string>
+    <string name="action_sslvpn_in">SSL_VPN 로그인</string>
+    <string name="opt_package_name">"com.raonsecure.motplx"</string>
+
+
+    <!-- Strings related to Login -->
+    <string name="prompt_userid">아이디</string>
+    <string name="prompt_password">OTP 인증번호</string>
+    <string name="action_sign_in">로그인</string>
+    <string name="action_ssl_vpn">SSL VPN SET</string>
+
+    <string name="action_sign_in_short">로그인</string>
+    <string name="error_invalid_email">아이디가 올바르지 않습니다</string>
+    <string name="error_sslpw_required">비밀번호를 입력해 주세요</string>
+    <string name="error_incorrect_password">비밀번호가 올바르지 않습니다</string>
+    <string name="error_sslid_required">아이디를 입력해 주세요</string>
+    <string name="permission_rationale">인증정보가 올바르지 않습니다.</string>
+    <string name="permission_network">네트워크 상태가 원활하지 않습니다.</string>
+    <string name="login_loading_msg">로그인 중입니다.</string>
+    <string name="login_setting_msg">초기데이터 설정 중입니다..</string>
+    <string name="server_error">Internal Server Error!!!</string>
+    <string name="timeout_exception">서버의 응답이 없습니다. 다시 시도해주시기 바랍니다.</string>
+    <string name="goto_point_detail">현황조사 상세페이지로 이동하시겠습니까?</string>
+    <string name="goto_insert_detail">현황조사 입력 페이지로 이동하시겠습니까?</string>
+
+    <!-- Strings related to MAIN PAGE -->
+    <string name="main_title">지적기준점 현황조사시스템</string>
+    <string name="onText">온라인</string>
+    <string name="offText">오프라인</string>
+    <string name="main_invest">2.현황조사</string>
+    <string name="main_gis">4.지도서비스</string>
+    <string name="main_down">1.현황자료\n내려받기</string>
+    <string name="main_down_title">현황자료 내려받기</string>
+    <string name="main_upload">3.현황자료\n올리기</string>
+    <string name="main_upload_title">현황자료 올리기</string>
+    <string name="main_map_title">4.지도 서비스</string>
+    <string name="main_mapSearch_title">지도검색</string>
+    <string name="main_board">공지사항</string>
+    <string name="main_qna">Q n A</string>
+    <string name="main_map_capture">약도</string>
+
+    <!-- Strings related to MAP SEARCH -->
+
+    <string name="str_map_search_pkind">기준점종류</string>
+    <string name="str_map_search_nm">기준점명</string>
+    <string name="str_invest_search_name">기준점명</string>
+    <string name="str_map_search_sido">시도</string>
+    <string name="str_map_search_sigungu">시군구</string>
+    <string name="str_map_search_dong">읍면동</string>
+    <string name="str_map_search_ri">리</string>
+    <string name="str_map_search_bunji">번지</string>
+    <string name="str_map_search_san">산</string>
+    <string name="str_map_search_bulid">건물명</string>
+    <string name="error_build_name">건물명을 입력하세요.</string>
+    <string name="str_map_search_doro">도로명</string>
+    <string name="str_map_search_buildno">건물번호</string>
+    <string name="str_map_location_addr_title">소재지</string>
+    <string name="str_map_location_insdate_title">설치일자</string>
+    <string name="str_map_location_status_title">표지상태</string>
+    <string name="downInvestListError">현황조사 자료가 없습니다. \n현황자료를 다운로드 받으세요.</string>
+
+
+    <!-- Strings related to GIS SERVICE -->
+    <string name="offline_message">No available network found.  Only local TPK will be loaded.</string>
+    <string name="olleh_id">e854dc4659ddc73ca14f119401b6c794</string>
+    <string name="olleh_pwd">bb42c5824d1b64c343521ba87bba34f7</string>
+    <string name="olleh_key">ZTg1NGRjNDY1OWRkYzczY2ExNGYxMTk0MDFiNmM3OTQ6YmI0MmM1ODI0ZDFiNjRjMzQzNTIxYmE4N2JiYTM0Zjc=</string>
+
+    <!--현황자료 입력 -->
+    <string name="title_activity_invest_serach">기준점 검색</string>
+    <string name="title_activity_invest_result">현황조사 리스트</string>
+    <string name="title_activity_boardlist">BoardlistActivity</string>
+    <string name="title_activity_boarddetail">BoarddetailActivity</string>
+    <string name="invest_detail_bottom_menu1">조사입력</string>
+    <string name="invest_detail_bottom_menu2">현황이력</string>
+    <string name="invest_detail_bottom_menu3">설치연혁</string>
+    <string name="invest_detail_bottom_menu4">위치조회</string>
+    <string name="invest_detail_bottom_menu5">현황리스트</string>
+    <string name="invest_history_list">현황이력 리스트</string>
+    <string name="invest_history_detail">현황이력 상세</string>
+    <string name="invest_input_inq_mtr">표지 재질</string>
+
+    <string name="invest_input_nav_step1">표지의 상태</string>
+    <string name="invest_input_nav_step2">위성측량가능여부</string>
+    <string name="invest_input_nav_step3">근경</string>
+    <string name="invest_input_nav_step4">원경</string>
+    <string name="invest_input_nav_step5">특이사항</string>
+    <string name="invest_input_nav_step6">약도</string>
+<!-- 20171113 d-->
+    <string name="invest_input_info_headoffice">본부</string>
+    <string name="invest_input_info_branchoffice">지사</string>
+
+    <!-- Strings related to Invest Serarch -->
+    <string name="action_back">Back</string>
+    <string name="title_activity_invest_detail">기준점 상세보기</string>
+    <string name="tab1">현황</string>
+    <string name="tab2">기본</string>
+    <string name="tab3">관측기지</string>
+    <string name="tab4">좌표</string>
+    <string name="section_format">Hello World from section: 11111</string>
+    <string name="title_activity_invest_history_list">investHistoryListActivity</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_insert_sub_page">insertSubPage</string>
+    <string name="title_activity_insert_sub_settle">insertSubSettle</string>
+    <string name="title_activity_insert_sub_etc">insertSubEtc</string>
+    <string name="title_activity_insert_sub_short_range_view">insertSubShortRangeView</string>
+    <string name="title_activity_insert_sub_distant_view">insertSubDistantView</string>
+    <string name="title_activity_insert_sub_rough_map">insertSubRoughMap</string>
+    <string name="title_activity_insert_sub_rough_map_detail">insertSubRoughMapDetail</string>
+    <string name="title_activity_point_result">기준점 결과리스트</string>
+    <string name="title_activity_build_result">결과리스트</string>
+    <string name="title_activity_test">testActivity</string>
+    <string name="title_activity_map_capture">MapCaptureActivity</string>
+
+    <string name="down_user_name">%1$s 님</string>
+    <string name="empty">""</string>
+
+    <!-- insert layout -->
+    <string name="insert_mtr_quality">표지의\n재질</string>
+    <string name="insert_mtr_sttus">표지의\n상태</string>
+    <string name="insert_rtk_able">위성측량\n가능여부</string>
+    <string name="insert_point_route">기준점\n경로</string>
+    <string name="insert_point_route_one_line">기준점 경로</string>
+    <string name="insert_location_detail">소재지\n상세정보</string>
+    <string name="insert_location_detail_one_line">소재지 상세정보</string>
+    <string name="insert_location_information">소재지 정보</string>
+    <string name="insert_etc">특이사항</string>
+    <string name="insert_symbol_back">></string>
+    <string name="insert_kimg">근경</string>
+    <string name="insert_oimg">원경</string>
+    <string name="insert_roughmap">약도</string>
+    <string name="insert_pimg">측정점\n위치설명도</string>
+    <string name="insert_save">저장</string>
+    <string name="insert_prev">이전</string>
+    <string name="insert_next">다음</string>
+    <string name="insert_continue">계속</string>
+    <string name="insert_complete">완료</string>
+    <string name="insert_images_choose_album">앨범선택</string>
+    <string name="insert_images_camera">카메라</string>
+    <string name="insert_images_memo">메모하기</string>
+    <string name="insert_images_make_roughmap">약도생성</string>
+
+    <string name="mrns">MRNS</string>
+    <string name="no_image_file">noimage.png</string>
+    <string name="title_points">%1$s(%2$s)</string>
+    <string name="simple_date_format">yyyy-MM-dd</string>
+    <string name="simple_date_format2">yyyyMMddHHmm</string>
+
+    <string name="invest_insert_title">현황조사입력</string>
+    <!-- DB Code -->
+    <string name="code_point_kind">100</string>
+    <string name="code_mtr_sttus">109</string>
+
+    <string-array name="radiobtn_mtr_sttus_text_array">
+        <item>   완전</item>
+        <item>   망실</item>
+        <item>   조사불가</item>
+        <item>   기타</item>
+    </string-array>
+
+    <string-array name="radiobtn_rtk_able_text_array">
+        <item>   양호</item>
+        <item>   보통</item>
+        <item>   불가</item>
+        <item>   기타</item>
+    </string-array>
+
+    <string-array name="radio_code_invest_insert">
+        <item>001</item>
+        <item>002</item>
+        <item>003</item>
+        <item>004</item>
+    </string-array>
+
+    <string-array name="insert_pen_type_name">
+        <item>자유곡선</item>
+        <item>직선</item>
+        <item>방향선</item>
+    </string-array>
+
+    <string-array name="insert_dash_type_name">
+        <item>직선</item>
+        <item>점선</item>
+        <item>파선</item>
+    </string-array>
+
+    <string-array name="insert_pen_color_name">
+        <item>검은색</item>
+        <item>흰색</item>
+        <item>빨간색</item>
+        <item>파란색</item>
+        <item>노란색</item>
+    </string-array>Wi
+
+    <string-array name="insert_pen_width_name">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string name="code_invest_insert_ongoing">1</string>
+    <string name="code_invest_insert_complete">2</string>
+    <string name="select_font">글씨체 선택</string>
+    <string name="information_add_text">내용을 입력해 주세요</string>
+
+    <string name="select_pen_type">펜 종류</string>
+    <string name="select_dash_type">대시 종류</string>
+    <string name="select_pen_color">펜 색상</string>
+    <string name="select_pen_width">펜 두께</string>
+    <string name="select_font_color">글자 색상</string>
+
+    <string name="add_sticker">아이콘 선택</string>
+
+    <!-- 업로드 파라미터 목록-->
+    <string-array name="array_upload_work_detail">
+        <item>sttus_bf_sn</item>
+        <item>base_point_no</item>
+        <item>points_knd_cd</item>
+        <item>points_nm</item>
+        <item>mtr_sttus_cd</item>
+        <item>inq_de</item>
+        <item>inq_sttus</item>
+        <item>inq_psitn</item>
+        <item>inq_clsf</item>
+        <item>inq_nm</item>
+        <item>inq_mtr_cd</item>
+        <item>rtk_posbl_yn</item>
+        <item>ptclmatr</item>
+        <item>k_img</item>
+        <item>o_img</item>
+        <item>msurpoints_lc_drw</item>
+        <item>rog_map</item>
+        <item>inq_mtr_etc</item>
+        <item>mtr_sttus_etc</item>
+        <item>rtk_posbl_etc</item>
+        <item>locplc_detail</item>
+        <item>inq_id</item>
+        <item>sttus_inq_stdr_points_list</item>
+        <item>stdrspot_sn</item>
+        <item>jgrc_cd</item>
+        <item>brh_cd</item>
+        <item>inq_instt_cd</item>
+        <item>rl_inq_psitn</item>
+        <item>rl_inq_clsf</item>
+        <item>rl_inq_nm</item>
+        <item>rl_inq_id</item>
+
+
+<!--        <item>ini_head_code</item>
+        <item>locplc_detail</item>-->
+    </string-array>
+
+    <!-- 업로드 파라미터 목록-->
+    <string-array name="array_upload_work_detail_ncp">
+        <item>npu_sn</item>
+        <item>inq_de</item>
+        <item>inq_instt_cd</item>
+        <item>inq_psitn</item>
+        <item>inq_psitn_nm</item>
+        <item>inq_ofcps</item>
+        <item>inq_ofcps_nm</item>
+        <item>inq_nm</item>
+        <item>inq_id</item>
+        <item>inq_mtr_cd</item>
+        <item>mtr_sttus_cd</item>
+        <item>rtk_posbl_yn</item>
+        <item>ptclmatr</item>
+        <item>inq_mtr_etc</item>
+        <item>mtr_sttus_etc</item>
+        <item>rtk_posbl_etc</item>
+        <item>k_img</item>
+        <item>o_img</item>
+        <item>msurpoints_lc_drw</item>
+        <item>rog_map</item>
+        <item>points_path</item>
+        <item>sttus_rslt_acptnc_sttus</item>
+        <item>rl_inq_psitn</item>
+        <item>rl_inq_psitn_nm</item>
+        <item>rl_inq_clsf</item>
+        <item>rl_inq_clsf_nm</item>
+        <item>rl_inq_nm</item>
+        <item>rl_inq_id</item>
+    </string-array>
+
+    <string name="history_list_column_seq">순번</string>
+    <string name="history_list_column_inq_date">조사일자</string>
+    <string name="history_list_column_inq_actor">조사자</string>
+    <string name="history_list_column_inq_institution">조사기관</string>
+
+    <string name="seperator">/</string>
+    <string name="init_value_progression">0/0/0/0/0/0/0/0</string>
+    <string name="notice_regist_date">등록일시 : </string>
+    <string name="notice_regist_user_name">작 성 자 : </string>
+    <string name="notice_close_forever">다시보지않기</string>
+
+    <string name="classCheckPref">classPref</string>
+    <string name="classCheckKey">isStd</string>
+
+    <string name="message_error_server_trans">서버 통신 중 오류가 발생했습니다.\n관리자에게 문의바랍니다.</string>
+
+    <string name="point_name_korean_part">한글명</string>
+    <string name="hint_emd_name">예) 가양동</string>
+    <string name="hyphen">-</string>
+
+    <string name="key_reg_code">regCode</string>
+    <string name="key_main_parcel_no">mainParcelNo</string>
+    <string name="key_sub_parcel_no">subParcelNo</string>
+    <string name="key_road_name">roadName</string>
+    <string name="key_start_building_no">startBuildingNo</string>
+    <string name="key_end_building_no">endBuildingNo</string>
+    <string name="key_building_name">buildingName</string>
+    <string name="key_road_address">roadAddress</string>
+    <string name="key_parcel_address">parcelAddress</string>
+    <string name="key_objectid">objectid</string>
+    <string name="key_point_type_for_map_query">7</string>
+    <string name="key_national_point_type_for_map_query">8</string>
+    <string name="key_common_point_type_for_map_query">9</string>
+    <string name="key_move_x">moveX</string>
+    <string name="key_move_y">moveY</string>
+
+    <string name="str_null">null</string>
+    <string name="url_detail_k_img">/MRNS/map/downloadDetailImage/kImg.json</string>
+    <string name="url_detail_o_img">/MRNS/map/downloadDetailImage/oImg.json</string>
+    <string name="url_detail_rog_map">/MRNS/map/downloadDetailImage/rogMap.json</string>
+    <string name="url_detail_msurpoints_lc_drw">/MRNS/map/downloadDetailImage/msurpointsLcDrw.json</string>
+    <string name="url_detail_msurpoints_lc_map">/MRNS/map/downloadDetailImage/msurpointsLcMap.json</string>
+
+    <string name="url_nc_detail_k_img">/MRNS/map/downloadNCDetailImage/kImg.json</string>
+    <string name="url_nc_detail_o_img">/MRNS/map/downloadNCDetailImage/oImg.json</string>
+    <string name="url_nc_detail_rog_map">/MRNS/map/downloadNCDetailImage/rogMap.json</string>
+    <string name="url_nc_detail_msurpoints_lc_drw">/MRNS/map/downloadNCDetailImage/msurpointsLcDrw.json</string>
+    <string name="url_nc_detail_unity_rog_map">/MRNS/map/downloadNCDetailImage/unityRogMapFile.json</string>
+    <string name="url_nc_detail_detail_map">/MRNS/map/downloadNCDetailImage/detailMap.json</string>
+
+    <string name="message_complete_download_images">이미지 다운로드 완료</string>
+    <string name="key_map_search_move">isMapSearchMove</string>
+    <string name="message_ban_map_search">시도/시군구 선택 후 다시 시도해주시기 바랍니다.</string>
+
+</resources>
+

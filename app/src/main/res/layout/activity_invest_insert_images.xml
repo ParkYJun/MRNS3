@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.mrns.invest.view.activity.InvestInsertImages">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_card_header"
+        android:background="@drawable/nav_bg_green"
+        android:elevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+
+            <LinearLayout
+                android:id="@+id/layout_back_home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/nav_btn_back_n"
+                    android:padding="@dimen/activity_horizontal_margin" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invest_insert_title"
+                        android:textColor="@color/textWhite"
+                        android:textSize="@dimen/invert_text_title_s_size"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textview_sub_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty"
+                        android:textColor="@color/textWhite"
+                        android:textSize="@dimen/invert_text_title_ss_size"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <include layout="@layout/include_invest_insert_process" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/activity_l_margin"
+        android:layout_marginRight="@dimen/activity_l_margin"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layout_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <ImageView
+                    android:id="@+id/imageview_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/white"
+                    android:scaleType="center" />
+
+                <TextView
+                    android:id="@+id/textview_image_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageview_image"
+                    android:layout_margin="@dimen/activity_s_margin"
+                    android:background="@android:color/white"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="6dp">
+
+            <Button
+                android:id="@+id/btn_album"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/insert_images_choose_album"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_camera"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/insert_images_camera"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_make_roughmap"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/insert_images_make_roughmap"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_memo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/insert_images_memo"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/btnNavBack"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_n"
+                android:src="@drawable/btn_prev_n" />
+
+            <Button
+                android:id="@+id/btn_complete"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:background="@drawable/btn_bg_n"
+                android:text="@string/insert_complete"
+                android:textColor="@color/textWhite"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/btnNavNext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/btn_bg_n"
+                android:src="@drawable/btn_next_n" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/area_sel"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_below="@+id/down_header">
+
+        <TextView
+            android:layout_width="72dp"
+            android:layout_height="match_parent"
+            android:textSize="14dp"
+            android:text="지역"
+            android:textColor="@color/colorlogo"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="16dp"/>
+
+        <Spinner
+            android:id="@+id/map_jisa"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/spinner"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/user_nm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="14dp"
+            android:text="홍길동 님"
+            android:textColor="@color/colorBody"
+            android:gravity="left|center_vertical"
+            android:paddingRight="16dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@drawable/down_title_border">
+
+        <TextView
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="21dp"
+            android:text="선택"
+            android:textSize="14dp"
+            android:textColor="@color/downTitleText"/>
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:text="기준점 자료"
+            android:textSize="14dp"
+            android:textColor="@color/downTitleText"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:gravity="right"
+            android:layout_marginRight="45dp"
+            android:text="작성일"
+            android:textSize="14dp"
+            android:textColor="@color/downTitleText"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/map_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:listSelector="@color/downSelector"></ListView>
+
+
+        <LinearLayout
+            android:id="@+id/down_footer"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@drawable/btn_bg_n">
+
+            <ImageView
+                android:id="@+id/img_down"
+                android:layout_width="45dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center_vertical|center_horizontal"
+                android:src="@drawable/btn_ic_download"/>
+
+            <TextView
+                android:id="@+id/btn_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:text="내려받기"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+</LinearLayout>

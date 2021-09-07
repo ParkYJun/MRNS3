@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/invest_insert_margin2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/str_invest_search_emd"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/invert_text_header_size" />
+
+                <EditText
+                    android:id="@+id/editbox_emd_name"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/edittext_n"
+                    android:imeOptions="actionDone"
+                    android:lines="1"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:layout_weight="3"
+                    android:textColor="@color/primary_text"
+                    android:textSize="@dimen/invert_text_content_size" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/invest_insert_margin2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/str_invest_search_point_class"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/invert_text_header_size" />
+
+                <Spinner
+                    android:id="@+id/spinner_point_class"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="3"
+                    android:background="@drawable/spinner" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/invest_insert_margin2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/str_invest_search_pkind"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/invert_text_header_size"
+                    />
+                <Spinner
+                    android:id="@+id/spinner_point_kind"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/spinner"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/invest_insert_margin2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/str_invest_search_date"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/invert_text_header_size"
+                    />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/editbox_start_date"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/str_invest_search_sdate"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/invert_text_content_size"
+                            android:background="@drawable/edittext_calendar_n"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_s_margin"
+                        android:layout_marginRight="@dimen/activity_s_margin"
+                        android:gravity="center"
+                        android:text="@string/str_invest_search_tilde"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/invert_text_content_size"/>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <EditText
+                            android:id="@+id/editbox_end_date"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center_vertical"
+                            android:layout_weight="1"
+                            android:focusable="false"
+                            android:focusableInTouchMode="false"
+                            android:hint="@string/str_invest_search_edate"
+                            android:textColor="@color/primary_text"
+                            android:textSize="@dimen/invert_text_content_size"
+                            android:background="@drawable/edittext_calendar_n"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/invest_insert_margin2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|center_horizontal"
+                    android:text="@string/str_map_search_nm"
+                    android:textColor="@color/secondary_text"
+                    android:textSize="@dimen/invert_text_header_size" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:layout_weight="3"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/editbox_point_name"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|center_vertical"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/edittext_n"
+                        android:imeOptions="actionDone"
+                        android:lines="1"
+                        android:maxLines="1"
+                        android:minLines="1"
+                        android:singleLine="true"
+                        android:textColor="@color/primary_text"
+                        android:hint="@string/point_name_korean_part"
+                        android:layout_marginRight="@dimen/invest_insert_margin2"
+                        android:textSize="@dimen/invert_text_content_size" />
+
+                    <EditText
+                        android:id="@+id/editbox_start_point_no"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/invert_text_content_size"
+                        android:background="@drawable/edittext_n"/>
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="@dimen/activity_s_margin"
+                        android:layout_marginRight="@dimen/activity_s_margin"
+                        android:gravity="center"
+                        android:text="@string/str_invest_search_tilde"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/invert_text_content_size"/>
+                    <EditText
+                        android:id="@+id/editbox_end_point_no"
+                        android:layout_width="0dp"
+                        android:layout_weight="4"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:textColor="@color/primary_text"
+                        android:textSize="@dimen/invert_text_content_size"
+                        android:background="@drawable/edittext_n"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_invest_search_search"
+        android:textStyle="bold"
+        android:textColor="@color/textWhite"
+        android:textSize="@dimen/invert_text_title_size"
+        android:background="@color/colorAccent"
+        />
+</LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.mrns.invest.view.activity.InvestInsertStatus"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_card_header"
+        android:background="@drawable/nav_bg_green"
+        android:elevation="2dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin">
+            <LinearLayout
+                android:id="@+id/layout_back_home"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/nav_btn_back_n"
+                    android:padding="@dimen/activity_horizontal_margin"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textview_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/invest_insert_title"
+                        android:textColor="@color/textWhite"
+                        android:textSize="@dimen/invert_text_title_s_size"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:id="@+id/textview_sub_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/empty"
+                        android:textColor="@color/textWhite"
+                        android:textSize="@dimen/invert_text_title_ss_size"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <include layout="@layout/include_invest_insert_process" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/layout_represent_inq"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/main_list_border"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/activity_invest_insert_info_margin"
+                    android:paddingEnd="@dimen/activity_invest_insert_info_margin">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/invert_text_header_sss_size"
+                        android:layout_weight="1"
+                        android:text="@string/invest_inq_represent"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_header_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/activity_s_margin"
+                            android:layout_weight="3"
+                            android:gravity="start|center_vertical"
+                            android:text="@string/invest_inq_head_office"
+                            android:textColor="@color/uploadDetailValue"
+                            android:textSize="@dimen/invert_text_header_s_size" />
+
+                        <Spinner
+                            android:id="@+id/spinner_represent_inq_head_office"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/activity_s_margin"
+                            android:layout_marginBottom="@dimen/activity_s_margin"
+                            android:layout_weight="2"
+                            android:background="@drawable/spinner" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/activity_s_margin"
+                            android:layout_weight="3"
+                            android:gravity="start|center_vertical"
+                            android:text="@string/invest_inq_branch"
+                            android:textColor="@color/uploadDetailValue"
+                            android:textSize="@dimen/invert_text_header_s_size" />
+
+                        <Spinner
+                            android:id="@+id/spinner_represent_inq_branch"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/activity_s_margin"
+                            android:layout_marginBottom="@dimen/activity_s_margin"
+                            android:layout_weight="2"
+                            android:background="@drawable/spinner" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/activity_s_margin"
+                            android:layout_weight="3"
+                            android:gravity="start|center_vertical"
+                            android:text="@string/invest_inq_id"
+                            android:textColor="@color/uploadDetailValue"
+                            android:textSize="@dimen/invert_text_header_s_size" />
+
+                        <EditText
+                            android:id="@+id/editbox_represent_inq_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/activity_s_margin"
+                            android:layout_marginBottom="@dimen/activity_s_margin"
+                            android:layout_weight="2"
+                            android:background="@drawable/edittext_n"
+                            android:imeOptions="actionDone"
+                            android:maxLines="1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/activity_s_margin"
+                            android:layout_weight="3"
+                            android:gravity="start|center_vertical"
+                            android:text="@string/invest_inq_position"
+                            android:textColor="@color/uploadDetailValue"
+                            android:textSize="@dimen/invert_text_header_s_size" />
+
+                        <Spinner
+                            android:id="@+id/spinner_represent_inq_position"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/activity_s_margin"
+                            android:layout_marginBottom="@dimen/activity_s_margin"
+                            android:layout_weight="2"
+                            android:background="@drawable/spinner" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/activity_s_margin"
+                            android:layout_weight="3"
+                            android:gravity="start|center_vertical"
+                            android:text="@string/invest_inq_name"
+                            android:textColor="@color/uploadDetailValue"
+                            android:textSize="@dimen/invert_text_header_s_size" />
+
+                        <EditText
+                            android:id="@+id/editbox_represent_inq_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/activity_s_margin"
+                            android:layout_marginBottom="@dimen/activity_s_margin"
+                            android:layout_weight="2"
+                            android:background="@drawable/edittext_n"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:textColor="@color/boardDate" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="@string/empty" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="@string/empty" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_real_inq"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:paddingStart="@dimen/activity_invest_insert_info_margin"
+                    android:paddingEnd="@dimen/activity_invest_insert_info_margin">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/invert_text_header_sss_size"
+                        android:layout_weight="1"
+                        android:text="@string/invest_inq_real"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_header_size" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/activity_s_margin"
+                            android:layout_weight="3"
+                            android:gravity="start|center_vertical"
+                            android:text="@string/invest_inq_head_office"
+                            android:textColor="@color/uploadDetailValue"
+                            android:textSize="@dimen/invert_text_header_s_size" />
+
+                        <Spinner
+                            android:id="@+id/spinner_real_inq_head_office"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/activity_s_margin"
+                            android:layout_marginBottom="@dimen/activity_s_margin"
+                            android:layout_weight="2"
+                            android:background="@drawable/spinner" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/activity_s_margin"
+                            android:layout_weight="3"
+                            android:gravity="start|center_vertical"
+                            android:text="@string/invest_inq_branch"
+                            android:textColor="@color/uploadDetailValue"
+                            android:textSize="@dimen/invert_text_header_s_size" />
+
+                        <Spinner
+                            android:id="@+id/spinner_real_inq_branch"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/activity_s_margin"
+                            android:layout_marginBottom="@dimen/activity_s_margin"
+                            android:layout_weight="2"
+                            android:background="@drawable/spinner" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/activity_s_margin"
+                            android:layout_weight="3"
+                            android:gravity="start|center_vertical"
+                            android:text="@string/invest_inq_id"
+                            android:textColor="@color/uploadDetailValue"
+                            android:textSize="@dimen/invert_text_header_s_size" />
+
+                        <EditText
+                            android:id="@+id/editbox_real_inq_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/activity_s_margin"
+                            android:layout_marginBottom="@dimen/activity_s_margin"
+                            android:layout_weight="2"
+                            android:background="@drawable/edittext_n"
+                            android:imeOptions="actionDone"
+                            android:maxLines="1" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/activity_s_margin"
+                            android:layout_weight="3"
+                            android:gravity="start|center_vertical"
+                            android:text="@string/invest_inq_position"
+                            android:textColor="@color/uploadDetailValue"
+                            android:textSize="@dimen/invert_text_header_s_size" />
+
+                        <Spinner
+                            android:id="@+id/spinner_real_inq_position"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/activity_s_margin"
+                            android:layout_marginBottom="@dimen/activity_s_margin"
+                            android:layout_weight="2"
+                            android:background="@drawable/spinner" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/activity_s_margin"
+                            android:layout_weight="3"
+                            android:gravity="start|center_vertical"
+                            android:text="@string/invest_inq_name"
+                            android:textColor="@color/uploadDetailValue"
+                            android:textSize="@dimen/invert_text_header_s_size" />
+
+                        <EditText
+                            android:id="@+id/editbox_real_inq_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="@dimen/activity_s_margin"
+                            android:layout_marginBottom="@dimen/activity_s_margin"
+                            android:layout_weight="2"
+                            android:background="@drawable/edittext_n"
+                            android:cursorVisible="false"
+                            android:focusable="false"
+                            android:textColor="@color/boardDate" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3"
+                            android:text="@string/empty" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"
+                            android:text="@string/empty" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom">
+        <ImageView
+            android:id="@+id/btnNavBack"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_prev_n"
+            android:background="@drawable/btn_bg_n"/>
+        <Button
+            android:id="@+id/btn_complete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:text="@string/insert_complete"
+            android:textColor="@color/textWhite"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:visibility="gone"
+            android:background="@drawable/btn_bg_n"/>
+        <ImageView
+            android:id="@+id/btnNavNext"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/btn_next_n"
+            android:background="@drawable/btn_bg_n"/>
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

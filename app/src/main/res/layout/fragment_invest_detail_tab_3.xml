@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal">
+
+    <ScrollView
+        android:id="@+id/detail_body"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/detail_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_body_border_n"
+                android:paddingBottom="@dimen/activity_s_margin"
+                android:paddingTop="@dimen/activity_s_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="측량방법"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scSurveyMethod"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="계산방법"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scCalcMethod"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_body_border_n"
+                android:paddingBottom="@dimen/activity_s_margin"
+                android:paddingTop="@dimen/activity_s_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="도선명"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scDosunName"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_body_border_n"
+                android:paddingBottom="@dimen/activity_s_margin"
+                android:paddingTop="@dimen/activity_s_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="사용\n기준점"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scUseDatum"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="출발\n시준점"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scStartDatum"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_body_border_n"
+                android:paddingBottom="@dimen/activity_s_margin"
+                android:paddingTop="@dimen/activity_s_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="도착시준점"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scDestPoint"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="도착\n기계점"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scDestMechanical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_body_border_n"
+                android:paddingBottom="@dimen/activity_s_margin"
+                android:paddingTop="@dimen/activity_s_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="시준점 전"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scBeforepoint"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="시전점 후"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scAfterPoint"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_weight="2"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_body_border_n"
+                android:paddingBottom="@dimen/activity_s_margin"
+                android:paddingTop="@dimen/activity_s_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="방위각"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scAzimuth"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down_body_border_n"
+                android:paddingBottom="@dimen/activity_s_margin"
+                android:paddingTop="@dimen/activity_s_margin">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="거리"
+                        android:textColor="@color/uploadDetail"
+                        android:textSize="@dimen/invert_text_header_ss_size" />
+
+                    <TextView
+                        android:id="@+id/scDistance"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="5"
+                        android:background="@drawable/edittext_n"
+                        android:gravity="center"
+                        android:textColor="@color/uploadDetailValue"
+                        android:textSize="@dimen/invert_text_content_ss_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
